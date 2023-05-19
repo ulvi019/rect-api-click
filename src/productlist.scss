@@ -1,0 +1,26 @@
+.sec2{
+
+     background:url('images/fon4.jpg') ;
+     background-position: center;
+   background-repeat: no-repeat;
+    background-size: cover;
+
+     .api-box{
+        animation-name:bgColorChange ;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay:2s ;
+          transition: .5s;
+          &:hover{
+               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          }
+     }
+
+}
+@keyframes bgColorChange {
+     0% { background-color: red; }
+    25% { background-color: orange; }
+    50% { background-color: yellow; }
+    75% { background-color: green; }
+   100% { background-color: blue; }
+ }
